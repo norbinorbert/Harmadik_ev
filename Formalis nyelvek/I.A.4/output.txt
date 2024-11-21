@@ -1,0 +1,9 @@
+haha : 1
+aha : 1
+ahhaha : 1
+ahhaha : 1
+aaaaa : 1
+ahah : 0
+haaa : 0
+hhh : 0
+ah : 0

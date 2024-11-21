@@ -1,0 +1,10 @@
+S A B END
+a b c
+S
+END
+S a S 
+S a A
+S a END
+A b B
+A b END
+B c A
