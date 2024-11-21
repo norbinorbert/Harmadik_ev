@@ -1,0 +1,14 @@
+1. Alakítsuk a kis "a" betűket nagy "A" betűkké. Bemenet: be1.txt
+
+2. 
+a. Keressük meg a bemenetben az egész számokat. A képernyőn csak ezek jelenjenek meg, minden szám új sorban.
+b. Írassuk ki a valós szamokat, illetve kezeljuk le az előjeleket is.
+Bemenet: be2.txt, be4.txt
+
+3. Keszítsunk statisztikát a bementi adatokból: sorok száma, karakterek száma, fehér karakterek száma.
+Bemenet: be3.txt, be1.txt, be2.txt, be4.txt
+
+4. Tisztítsuk meg a bemenetet a C/C++ kommentektől (egysoros és többsoros kommentektől egyaránt).
+a. Többsoros kommentek: startfeltételekkel.
+b. Többsoros kommentek: 1 db. reguláris kifejezéssel.
+Bemenet: be4.txt (egysoros kommentek jelenleg nincsenek benne)

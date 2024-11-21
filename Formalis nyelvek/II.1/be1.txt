@@ -1,0 +1,7 @@
+A Flex lexical analyzer sometimes has time complexity
+O(n) in the length of the input. That is, it performs a
+constant number of operations for each input symbol. This
+constant is quite low: GCC generates 12 instructions for
+the DFA match loop. Note that the constant is independent
+of the length of the token, the length of the regular
+expression and the size of the DFA.
