@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "bnim2219",
+    "module": "client",
+    "version": "unspecified",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "client-unspecified.jar",
+          "url": "client-unspecified.jar",
+          "size": 4050,
+          "sha512": "20433e9aeda7c426c0cd848eca19325dcd411e885aec58c4071d3a6a2b68b044bb1b56c4a172e94b532f91f022ba6148296bf7f07eb93ec5618e3181e8145577",
+          "sha256": "61cf52912459822b1c944f1672a55b8e0ca534dac1e359ab8e6d4530728b586b",
+          "sha1": "1cadb50b8a4a45e52a3a4a99c9be5c4bb15971ac",
+          "md5": "17f0f8cda33a066ce1af371c69f508f5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.16"
+          }
+        },
+        {
+          "group": "bnim2219",
+          "module": "server",
+          "version": {
+            "requires": "unspecified"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.5.11"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "client-unspecified.jar",
+          "url": "client-unspecified.jar",
+          "size": 4050,
+          "sha512": "20433e9aeda7c426c0cd848eca19325dcd411e885aec58c4071d3a6a2b68b044bb1b56c4a172e94b532f91f022ba6148296bf7f07eb93ec5618e3181e8145577",
+          "sha256": "61cf52912459822b1c944f1672a55b8e0ca534dac1e359ab8e6d4530728b586b",
+          "sha1": "1cadb50b8a4a45e52a3a4a99c9be5c4bb15971ac",
+          "md5": "17f0f8cda33a066ce1af371c69f508f5"
+        }
+      ]
+    }
+  ]
+}

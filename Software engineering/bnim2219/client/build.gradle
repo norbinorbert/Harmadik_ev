@@ -1,0 +1,15 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass='edu.bbte.bnim2219.client.Main'
+}
+
+dependencies {
+    implementation project(':server')
+}
+
+run {
+    standardInput = System.in
+}

@@ -1,0 +1,5 @@
+C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\DaoFactory.class
+C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\memory\MemoryDaoFactory.class
+C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\memory\TrainingInMemDao.class
+C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\TrainingDao.class
+C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\model\Training.class

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.12.4">
+<file name="C:\Users\norbi\Desktop\Software engineering\bnim2219\server\src\main\java\edu\bbte\bnim2219\server\dao\DaoFactory.java">
+</file>
+<file name="C:\Users\norbi\Desktop\Software engineering\bnim2219\server\src\main\java\edu\bbte\bnim2219\server\dao\memory\MemoryDaoFactory.java">
+</file>
+<file name="C:\Users\norbi\Desktop\Software engineering\bnim2219\server\src\main\java\edu\bbte\bnim2219\server\dao\memory\TrainingInMemDao.java">
+</file>
+<file name="C:\Users\norbi\Desktop\Software engineering\bnim2219\server\src\main\java\edu\bbte\bnim2219\server\dao\TrainingDao.java">
+</file>
+<file name="C:\Users\norbi\Desktop\Software engineering\bnim2219\server\src\main\java\edu\bbte\bnim2219\server\model\Training.java">
+</file>
+</checkstyle>

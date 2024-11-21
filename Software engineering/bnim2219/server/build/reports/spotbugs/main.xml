@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.0" sequence="0" timestamp="1731516830988" analysisTimestamp="1731516831084" release="unspecified">
+  <Project projectName="server (spotbugsMain)">
+    <Jar>C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\DaoFactory.class</Jar>
+    <Jar>C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\memory\MemoryDaoFactory.class</Jar>
+    <Jar>C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\memory\TrainingInMemDao.class</Jar>
+    <Jar>C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\dao\TrainingDao.class</Jar>
+    <Jar>C:\Users\norbi\Desktop\Software engineering\bnim2219\server\build\classes\java\main\edu\bbte\bnim2219\server\model\Training.class</Jar>
+    <AuxClasspathEntry>C:\Users\norbi\.gradle\caches\modules-2\files-2.1\org.projectlombok\lombok\1.18.34\ec547ef414ab1d2c040118fb9c1c265ada63af14\lombok-1.18.34.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\norbi\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.16\172931663a09a1fa515567af5fbef00897d3c04\slf4j-api-2.0.16.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\norbi\Desktop\Software engineering\bnim2219\server\src\main\resources</SrcDir>
+    <SrcDir>C:\Users\norbi\Desktop\Software engineering\bnim2219\server\src\main\java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 13 Nov 2024 18:53:50 +0200" total_classes="5" referenced_classes="32" total_bugs="0" total_size="58" num_packages="3" java_version="21" vm_version="21+35-LTS-2513" cpu_seconds="21.36" clock_seconds="5.91" peak_mbytes="211.73" alloc_mbytes="3904.00" gc_seconds="0.03">
+    <FileStats path="edu/bbte/bnim2219/server/dao/DaoFactory.java" bugCount="0" size="9"/>
+    <FileStats path="edu/bbte/bnim2219/server/dao/TrainingDao.java" bugCount="0" size="4"/>
+    <FileStats path="edu/bbte/bnim2219/server/dao/memory/MemoryDaoFactory.java" bugCount="0" size="5"/>
+    <FileStats path="edu/bbte/bnim2219/server/dao/memory/TrainingInMemDao.java" bugCount="0" size="18"/>
+    <FileStats path="edu/bbte/bnim2219/server/model/Training.java" bugCount="0" size="22"/>
+    <PackageStats package="edu.bbte.bnim2219.server.dao" total_bugs="0" total_types="2" total_size="13">
+      <ClassStats class="edu.bbte.bnim2219.server.dao.DaoFactory" sourceFile="DaoFactory.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="edu.bbte.bnim2219.server.dao.TrainingDao" sourceFile="TrainingDao.java" interface="true" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.bbte.bnim2219.server.dao.memory" total_bugs="0" total_types="2" total_size="23">
+      <ClassStats class="edu.bbte.bnim2219.server.dao.memory.MemoryDaoFactory" sourceFile="MemoryDaoFactory.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="edu.bbte.bnim2219.server.dao.memory.TrainingInMemDao" sourceFile="TrainingInMemDao.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.bbte.bnim2219.server.model" total_bugs="0" total_types="1" total_size="22">
+      <ClassStats class="edu.bbte.bnim2219.server.model.Training" sourceFile="Training.java" interface="false" size="22" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1060" invocations="612" avgMicrosecondsPerInvocation="1733" maxMicrosecondsPerInvocation="74509" standardDeviationMicrosecondsPerInvocation="5341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="420" invocations="32" avgMicrosecondsPerInvocation="13143" maxMicrosecondsPerInvocation="380709" standardDeviationMicrosecondsPerInvocation="66084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="382" invocations="163" avgMicrosecondsPerInvocation="2348" maxMicrosecondsPerInvocation="235148" standardDeviationMicrosecondsPerInvocation="18401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="339" invocations="617" avgMicrosecondsPerInvocation="550" maxMicrosecondsPerInvocation="134021" standardDeviationMicrosecondsPerInvocation="5806"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="312" invocations="32" avgMicrosecondsPerInvocation="9763" maxMicrosecondsPerInvocation="69204" standardDeviationMicrosecondsPerInvocation="17810"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="236" invocations="32" avgMicrosecondsPerInvocation="7377" maxMicrosecondsPerInvocation="218823" standardDeviationMicrosecondsPerInvocation="37994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="198" invocations="69" avgMicrosecondsPerInvocation="2872" maxMicrosecondsPerInvocation="103230" standardDeviationMicrosecondsPerInvocation="12912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="178" invocations="32" avgMicrosecondsPerInvocation="5568" maxMicrosecondsPerInvocation="31034" standardDeviationMicrosecondsPerInvocation="9024"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="102" invocations="32" avgMicrosecondsPerInvocation="3210" maxMicrosecondsPerInvocation="34021" standardDeviationMicrosecondsPerInvocation="7890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="98" invocations="574" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="8785" standardDeviationMicrosecondsPerInvocation="601"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
