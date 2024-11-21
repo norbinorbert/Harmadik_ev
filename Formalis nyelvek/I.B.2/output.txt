@@ -1,0 +1,6 @@
+aaabbb : 1
+aabbb : 1
+abab : 0
+ : 1
+aaaabbbb : 1
+aaaaa : 1

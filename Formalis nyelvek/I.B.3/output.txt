@@ -1,0 +1,10 @@
+p "q-s" r 
+a b 
+p
+"q-s"  r 
+"q-s"  a "q-s" 
+"q-s"  b r
+p a "q-s" 
+p b r
+r a p
+r b "q-s" 
