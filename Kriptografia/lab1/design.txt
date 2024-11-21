@@ -1,0 +1,37 @@
+Name: Boda Norbert
+SUNet: <SUNet ID>
+
+In 1-3 sentences per section, comment on your approach to each of the parts of the assignment. What was your high-level strategy?
+How did you translate that into code? Did you make use of any Pythonic practices? We want you to reflect on your coding style,
+and whether you're making full use of the utilities provides.
+
+
+# Caesar Cipher
+encryption: converted capital letters into their ASCII number counterparts, added 3 to them and converted them
+    back to letters. If any number exceeded the number of capital Z, I subtracted ('Z' - 'A' + 1) so it loops around
+decryption: pretty much same as encryption, except I subtracted 3 from the ASCII numbers. In case of "underflow", I
+    added ('Z' - 'A' + 1) so it loops around
+
+# Vigenere Cipher
+encryption: For each letter (from plaintext and keyword) I calculated the number in the alphabet
+    (by subtracting 'A' from each ascii value), added them together, added the 'A' Ascii value to the sum,
+    made sure it doesn't "overflow" by subtracting ('Z' - 'A' + 1) if needed, then transformed the number into letter
+decryption: For each letter (from cipher and keyword) I calculated the number in the alphabet
+    (by subtracting 'A' from each ascii value), subtracted keyword from cipher, added the 'A' Ascii value to the result,
+    made sure it doesn't "underflow" by adding ('Z' - 'A' + 1) if needed, then transformed the number into letter
+
+# Scytale Cipher
+encryption: Made 'circumference' amount of empty rows, then for each letter in the plaintext, I calculated which
+    row they belong in by using '% circumference'. After filling all rows, I concatenated them using pythons
+    join function
+decryption: First I calculated how many characters should be in a row by "simulating" how letters would be distribuited.
+    Then I filled the rows in the way they would be filled after encrypting the plaintext. Lastly I simulated again
+    how letters would be distribuited, only now I actually read the characters from the rows
+
+# Railfence Cipher
+encryption: Similar to Scytale, made 'num_rails' amount of empty rows, then iterated through the plaintext letters
+    and placed them in their respective rows using a counter. Counter would increase until it reached 'num_rails' and
+    decrease until reaching 0
+decryption: First I calculated how many characters should be in a row by "simulating" how letters would be distribuited.
+    Then I filled the rows in the way they would be filled after encrypting the plaintext. Lastly I simulated again
+    how letters would be distribuited, only now I actually read the characters from the rows

@@ -1,0 +1,9 @@
+{
+  "block_size": 24,
+  "algorithm": "vigenere",
+  "key": "0123456789ABCDEF",
+  "mode":"ctr",
+  "iv": "0123456789ABCDEF",
+  "padding": "schneier_padding",
+  "file_name": "test_pic.jpg"
+}
