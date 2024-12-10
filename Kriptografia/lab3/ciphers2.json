@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "AES",
+    "mode": "ofb",
+    "padding": "schneier_padding",
+    "block_size": 16
+  },
+  {
+    "algorithm": "AES",
+    "mode": "ofb",
+    "padding": "zero_padding",
+    "block_size": 16
+  }
+]

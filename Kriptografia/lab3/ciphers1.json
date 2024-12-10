@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "",
+    "mode": "ecb",
+    "padding": "schneier_padding",
+    "block_size": 24
+  },
+  {
+    "algorithm": "",
+    "mode": "ofb",
+    "padding": "zero_padding",
+    "block_size": 16
+  }
+]
