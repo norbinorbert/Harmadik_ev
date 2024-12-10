@@ -1,0 +1,19 @@
+double _a;
+_a = -1.1;
+read _a;
+double _b;
+
+if (_a == _b || _a != -2.1) {
+    write "asd";
+    double _c;
+    if(_c == _a) {
+        write _c;
+    };
+};
+
+while(_b != 0.0){
+    _c = _a + _b;
+    _b = _b - 0.1;
+    _a = _a + 1.1;
+    _a = _a * _a;
+};

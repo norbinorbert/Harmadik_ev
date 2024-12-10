@@ -1,0 +1,17 @@
+int _a;
+_a = -1.1;
+read _a;
+double _b4;
+
+if (_a == _b || _a != -2) {
+    write "asd";
+    if(_c == _d) {
+        write _c;
+    };
+};
+
+while(_b != 0){
+    _b = _b - 0.1;
+    _a = _a + 1;
+    _a = _a * _a;
+};
