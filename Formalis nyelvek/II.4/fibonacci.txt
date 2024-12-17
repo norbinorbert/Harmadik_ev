@@ -1,0 +1,26 @@
+int _n;
+write "n = ";
+read _n;
+
+if (_n == 0) {
+    write 0;
+} else {
+    if (_n == 1) {
+        write 1;
+    } else {
+        int _counter;
+        _counter = 1;
+        int _fib0;
+        _fib0 = 0;
+        int _fib1;
+        _fib1 = 1;
+        int _fib2;
+        while (_counter != _n) {
+            _counter = _counter + 1;
+            _fib2 = _fib0 + _fib1;
+            _fib0 = _fib1;
+            _fib1 = _fib2;
+        };
+        write _fib2;
+    };
+};

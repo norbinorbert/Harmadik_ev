@@ -1,0 +1,19 @@
+int _a;
+write "_a = ";
+read _a;
+
+int _b;
+write "_b = ";
+read _b;
+
+while (_a != _b) {
+    if (_a > _b){
+        _a = _a - _b;
+    };
+    if (_b > _a) {
+        _b = _b - _a;
+    };
+};
+
+write "lnko = ";
+write _a;
