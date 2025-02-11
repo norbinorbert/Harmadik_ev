@@ -5,10 +5,12 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: admin
-    volumes: 
+    volumes:
       - ./database:/docker-entrypoint-initdb.d
   server1:
-    build: ./server1
+    build:
+      context: ./server1
+      dockerfile: Dockerfile
     container_name: server1
     restart: unless-stopped
     environment:
@@ -16,7 +18,9 @@ services:
     depends_on:
       - db
   server2:
-    build: ./server2
+    build:
+      context: ./server2
+      dockerfile: Dockerfile
     container_name: server2
     restart: unless-stopped
     ports:
@@ -26,7 +30,9 @@ services:
     environment:
       MYSQL_HOST: db
   server3:
-    build: ./server3
+    build:
+      context: ./server3
+      dockerfile: Dockerfile
     container_name: server3
     restart: unless-stopped
     ports:

@@ -3,6 +3,8 @@ plugins {
     id 'war'
 }
 
+apply from: './lint.gradle'
+
 repositories {
     mavenCentral()
 }

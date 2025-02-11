@@ -39,18 +39,19 @@ public class Servlet extends HttpServlet {
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery("SELECT * FROM Author");
                 List<Author> list = new ArrayList<>();
-                while (resultSet.next()){
+                while (resultSet.next()) {
                     list.add(new Author(resultSet.getLong(1), resultSet.getString(2)));
                 }
                 objectMapper.writeValue(resp.getOutputStream(), list);
                 return;
             }
             String id = pathInfo.split("/")[1];
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Author WHERE authorID = ?");
+            PreparedStatement preparedStatement = 
+                connection.prepareStatement("SELECT * FROM Author WHERE authorID = ?");
             preparedStatement.setString(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             List<Author> list = new ArrayList<>();
-            if (resultSet.next()){
+            if (resultSet.next()) {
                 list.add(new Author(resultSet.getLong(1), resultSet.getString(2)));
             }
             objectMapper.writeValue(resp.getOutputStream(), list);
