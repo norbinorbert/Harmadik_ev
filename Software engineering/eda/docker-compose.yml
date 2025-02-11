@@ -1,0 +1,48 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      retries: 3
+
+  producer-java:
+    build: ./services/producer_java
+    container_name: producer_java
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  consumer_producer_python:
+    build: ./services/consumer_producer_python
+    container_name: consumer_producer_python
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  consumer-python1:
+    build: ./services/consumer_python1
+    container_name: consumer_python1
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  consumer-python2:
+    build: ./services/consumer_python2
+    container_name: consumer_python2
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
